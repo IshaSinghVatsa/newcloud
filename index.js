@@ -45,7 +45,6 @@ app.get('/memories',(req,res)=>{
     res.render('memories');
 })
 
-
-app.listen(process.env.PORT,()=>{
-    console.log(`Server started on port ${process.env.PORT}`);
+app.listen('80', () => {
+  console.log('Server started on port 80');
 });
